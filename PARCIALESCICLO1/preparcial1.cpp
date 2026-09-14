@@ -5,6 +5,8 @@ El sistema trabajará con un máximo de 10 elementos
 */
 #include <iostream>
 
+
+// Parte 1.
 struct Elemento {
 
     std:: string codigo[9], nombre;
@@ -16,35 +18,39 @@ struct Elemento {
 void registrarElemento(Elemento &elemento){
 int opcion;
 
-std:: cout <<"Ingresa cuantos elementos colocarás" << std:: endl;
+std:: cout <<"Ingresa cuantos elementos colocaras" << std:: endl;
 std:: cin >> opcion;
 
 if (opcion <1 || opcion >10){
 
-std:: cout <<"Opción invalida" << std::endl;
+std:: cout <<"Opcion invalida" << std::endl;
 
 
 }
-else {
-
+else 
+// Parte 2
 for (int i=0; i<opcion; i++)
 {
-std:: cout <<"Codigo del elemento: " << elemento.codigo << std:: endl;    
-std:: cout <<"Nombre del elemento: " << elemento.nombre << std:: endl;
-std:: cout <<"Cual es su longitud? " << elemento.longitud << std:: endl;
-std:: cout <<"Cuales son sus cargas?: " << elemento.carga << std:: endl;
+std:: cout <<"Codigo del elemento: " << elemento.codigo[9] << std:: endl;    
+std:: cout <<"Nombre del elemento: " << elemento.nombre << std:: endl;std:: cout <<"Cual es su longitud? " << elemento.longitud << std:: endl;
+std:: cout <<"Cuales son sus cargas?: " << elemento.carga[3] << std:: endl;
 std:: cout <<"Cual es su capacidad maxima?: " << elemento.capacidad << std:: endl;
 }
 
+for(int i=0; i<3; i++)
+{
+
+std:: cout << elemento.carga[3] << std:: endl; 
+
+} 
 
 };
 
-}
+//Parte 3
+
 
 int main (){
 
-    
-
-
+void registrarElemento(Elemento &elemento);
     return 0;
-}
+}       
